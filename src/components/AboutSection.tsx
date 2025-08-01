@@ -1,5 +1,6 @@
-import { Code2, Server, Database, Shield } from "lucide-react";
+import { Code2, Server, Database } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import profilePhoto from "@/assets/temp-profile.jpg";
 
 const AboutSection = () => {
   const highlights = [
@@ -16,12 +17,7 @@ const AboutSection = () => {
     {
       icon: <Database className="w-8 h-8 text-primary" />,
       title: "Database Management",
-      description: "SQL databases, data modeling, performance optimization"
-    },
-    {
-      icon: <Shield className="w-8 h-8 text-primary" />,
-      title: "Security Implementation",
-      description: "Spring Security, authentication workflows, secure coding practices"
+      description: "SQL databases, performance optimization, query optimization"
     }
   ];
 
@@ -36,8 +32,15 @@ const AboutSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">
+          <div className="flex flex-col items-center lg:items-start">
+            <div className="mb-8">
+              <img 
+                src={profilePhoto} 
+                alt="Ittadi Karunya - Full Stack Developer" 
+                className="w-48 h-48 rounded-full object-cover shadow-lg mx-auto lg:mx-0"
+              />
+            </div>
+            <h3 className="text-2xl font-semibold text-foreground mb-6 text-center lg:text-left">
               Crafting Digital Solutions with Modern Technologies
             </h3>
             
