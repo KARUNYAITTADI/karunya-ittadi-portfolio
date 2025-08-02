@@ -70,15 +70,21 @@ const HeroSection = () => {
                 </Button>
               </div>
               
-              <div className="flex gap-4 justify-center lg:justify-start">
-                <Button variant="ghost" size="sm" className="hover-lift p-2">
-                  <Github size={24} />
+               <div className="flex gap-4 justify-center lg:justify-start">
+                <Button variant="ghost" size="sm" className="hover-lift p-2" asChild>
+                  <a href="https://github.com/KARUNYAITTADI" target="_blank" rel="noopener noreferrer">
+                    <Github size={24} />
+                  </a>
                 </Button>
-                <Button variant="ghost" size="sm" className="hover-lift p-2">
-                  <Linkedin size={24} />
+                <Button variant="ghost" size="sm" className="hover-lift p-2" asChild>
+                  <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer">
+                    <Linkedin size={24} />
+                  </a>
                 </Button>
-                <Button variant="ghost" size="sm" className="hover-lift p-2">
-                  <Mail size={24} />
+                <Button variant="ghost" size="sm" className="hover-lift p-2" asChild>
+                  <a href="mailto:karunyaittadi@gmail.com">
+                    <Mail size={24} />
+                  </a>
                 </Button>
               </div>
             </div>

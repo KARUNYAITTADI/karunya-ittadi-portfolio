@@ -44,14 +44,20 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex justify-center gap-4">
-            <Button variant="ghost" size="sm" className="text-background hover:text-foreground hover:bg-background p-3">
-              <Github size={20} />
+            <Button variant="ghost" size="sm" className="text-background hover:text-foreground hover:bg-background p-3" asChild>
+              <a href="https://github.com/KARUNYAITTADI" target="_blank" rel="noopener noreferrer">
+                <Github size={20} />
+              </a>
             </Button>
-            <Button variant="ghost" size="sm" className="text-background hover:text-foreground hover:bg-background p-3">
-              <Linkedin size={20} />
+            <Button variant="ghost" size="sm" className="text-background hover:text-foreground hover:bg-background p-3" asChild>
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer">
+                <Linkedin size={20} />
+              </a>
             </Button>
-            <Button variant="ghost" size="sm" className="text-background hover:text-foreground hover:bg-background p-3">
-              <Mail size={20} />
+            <Button variant="ghost" size="sm" className="text-background hover:text-foreground hover:bg-background p-3" asChild>
+              <a href="mailto:karunyaittadi@gmail.com">
+                <Mail size={20} />
+              </a>
             </Button>
           </div>
 
