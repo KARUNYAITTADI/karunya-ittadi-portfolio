@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to My Portfolio project
 
 ## Project info
 
@@ -7,12 +7,6 @@
 ## How can I edit this code?
 
 There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/8d2b553a-95a7-498a-bd0e-6161be0bb670) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
@@ -58,7 +52,6 @@ This project is built with:
 - TypeScript
 - React
 - shadcn-ui
-- Tailwind CSS
 
 ## How can I deploy this project?
 
