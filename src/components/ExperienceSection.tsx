@@ -6,9 +6,9 @@ const ExperienceSection = () => {
   const experiences = [
     {
       title: "Full Stack Developer",
-      company: "Tech Innovation Hub",
+      company: "Endeavour Techologies",
       location: "Hyderabad, India",
-      duration: "2023 - Present",
+      duration: "2024 - Present",
       type: "Full-time",
       achievements: [
         "Developed and maintained web applications using Java Spring Boot and Angular",
@@ -18,7 +18,7 @@ const ExperienceSection = () => {
         "Collaborated with cross-functional teams in Agile development environment",
         "Optimized database queries resulting in 40% performance improvement"
       ],
-      technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "REST APIs", "MySQL"]
+      technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "REST APIs", "PostgreSQL"]
     }
   ];
 

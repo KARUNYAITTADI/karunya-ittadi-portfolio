@@ -47,8 +47,8 @@ Key architectural decisions include implementing microservices patterns for scal
         "Achieved 95% code coverage with comprehensive unit testing",
         "Documented APIs using Swagger with 100% endpoint coverage"
       ],
-      demoUrl: "#",
-      githubUrl: "#"
+      demoUrl: "https://medworldexpo.com/v1/",
+      // githubUrl: "#"
     },
     {
       title: "Portfolio Website",
@@ -59,7 +59,7 @@ Key architectural decisions include implementing microservices patterns for scal
 The website features a clean, professional design with smooth animations and interactive elements. It's built with accessibility in mind, ensuring compliance with WCAG guidelines and providing an excellent experience across all devices and browsers.
 
 The site includes dynamic content management, SEO optimization, and performance optimization techniques resulting in excellent Lighthouse scores across all metrics.`,
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Lucide Icons", "Vite"],
+      technologies: ["React", "TypeScript"], //, "Tailwind CSS", "Lucide Icons", "Vite"
       features: [
         {
           icon: <Zap className="w-5 h-5" />,
@@ -77,8 +77,8 @@ The site includes dynamic content management, SEO optimization, and performance 
         "Implemented smooth animations and micro-interactions",
         "Fully responsive design tested across 15+ devices"
       ],
-      demoUrl: "#",
-      githubUrl: "#"
+      demoUrl: "",
+      githubUrl: ""
     }
   ];
 
@@ -115,14 +115,21 @@ The site includes dynamic content management, SEO optimization, and performance 
                   </div>
                   
                   <div className="flex gap-3 flex-shrink-0">
-                    <Button variant="outline" size="sm" className="hover-lift">
-                      <ExternalLink size={16} className="mr-2" />
-                      Demo
-                    </Button>
-                    <Button variant="outline" size="sm" className="hover-lift">
-                      <Github size={16} className="mr-2" />
-                      Code
-                    </Button>
+                    {project.demoUrl && (
+                      <Button variant="outline" size="sm" className="hover-lift">
+                        <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                          Demo
+                        </a>
+                      </Button>
+                    )}
+                    {project.githubUrl && project.githubUrl.trim() !== "" && (
+                      <Button variant="outline" size="sm" className="hover-lift">
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                          <Github size={16} className="mr-2" />
+                          Code
+                        </a>
+                      </Button>
+  )}
                   </div>
                 </div>
                 

@@ -1,42 +1,214 @@
-#root {
-  max-width: 1280px;
+/* 🎨 Vibrant Portfolio Theme – Ittadi Karunya */
+:root {
+  --bg: #ffffff;
+  --text: #1e293b;
+  --primary: #3a86ff;
+  --primary-dark: #265ddf;
+  --secondary: #ffbe0b;
+  --secondary-dark: #f1a500;
+  --muted: #f1f5f9;
+  --accent: #e0f2fe;
+  --accent-dark: #bae6fd;
+  --card-bg: #ffffff;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --glow-shadow: 0 0 16px rgba(58, 134, 255, 0.2);
+  --radius: 12px;
+  --transition: all 0.3s ease-in-out;
+  --font: 'Poppins', sans-serif;
+  --max-width: 1200px;
+}
+
+/* ===== Base Styles ===== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* ===== Typography ===== */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
+}
+
+.section {
+  padding: 4rem 1rem;
+}
+
+.section-title {
   text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* ===== Hero Section ===== */
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem 2rem;
+  position: relative;
+  overflow: hidden;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #f1f5f9;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero-btn {
+  margin-top: 2rem;
 }
 
+/* ===== Button ===== */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  box-shadow: var(--glow-shadow);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-dark);
+}
+
+/* ===== Card ===== */
 .card {
-  padding: 2em;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-.read-the-docs {
-  color: #888;
+/* ===== Skills ===== */
+.skill-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--primary-dark);
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  margin: 0.25rem;
+  transition: var(--transition);
+}
+.skill-badge:hover {
+  background-color: var(--accent-dark);
+  transform: scale(1.05);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--muted);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-link {
+  margin: 0 1rem;
+  font-weight: 500;
+  color: var(--text);
+  position: relative;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  .hero { padding: 3rem 1.5rem; }
+  .btn { font-size: 0.9rem; padding: 0.6rem 1.25rem; }
+  .navbar { flex-direction: column; }
+  .nav-link { margin: 0.5rem 0; }
 }

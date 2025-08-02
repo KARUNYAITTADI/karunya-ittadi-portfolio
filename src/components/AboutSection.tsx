@@ -1,6 +1,6 @@
 import { Code2, Server, Database } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import profilePhoto from "@/assets/temp-profile.jpg";
+import my_pic from "@/assets/Media (1).jpeg";
 
 const AboutSection = () => {
   const highlights = [
@@ -35,13 +35,14 @@ const AboutSection = () => {
           <div className="flex flex-col items-center lg:items-start">
             <div className="mb-8">
               <img 
-                src={profilePhoto} 
+                src={my_pic} 
                 alt="Ittadi Karunya - Full Stack Developer" 
-                className="w-48 h-48 rounded-full object-cover shadow-lg mx-auto lg:mx-0"
+                className="w-52 h-52 rounded-full object-cover shadow-lg mx-auto lg:mx-0"
               />
             </div>
             <h3 className="text-2xl font-semibold text-foreground mb-6 text-center lg:text-left">
-              Crafting Digital Solutions with Modern Technologies
+              {/* Crafting Digital Solutions with Modern Technologies */}
+              Building Modern Web Solutions
             </h3>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
@@ -61,7 +62,7 @@ const AboutSection = () => {
               </p>
               
               <p>
-                Based in Hyderabad, I'm always eager to collaborate on challenging projects 
+                I'm always eager to collaborate on challenging projects 
                 that push the boundaries of technology and deliver real value to users. I 
                 believe in continuous learning and staying updated with the latest industry 
                 trends and best practices.

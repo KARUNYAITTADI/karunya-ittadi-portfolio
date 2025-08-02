@@ -30,14 +30,14 @@ const ContactSection = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "ittadi.karunya@email.com",
-      link: "mailto:ittadi.karunya@email.com"
+      value: "karunyaittadi@gmail.com",
+      link: "mailto:karunyaittadi@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      value: "+91 9876543210",
-      link: "tel:+919876543210"
+      value: "+91 7032453818",
+      link: "tel:+917032453818"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -51,12 +51,12 @@ const ContactSection = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       title: "LinkedIn",
-      url: "https://linkedin.com/in/ittadi-karunya"
+      url: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
     },
     {
       icon: <Github className="w-6 h-6" />,
       title: "GitHub", 
-      url: "https://github.com/ittadi-karunya"
+      url: "https://github.com/KARUNYAITTADI"
     }
   ];
 

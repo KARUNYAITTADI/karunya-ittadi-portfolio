@@ -7,10 +7,10 @@ const SkillsSection = () => {
       title: "Backend Development",
       icon: "🔧",
       skills: [
-        { name: "Java", level: "Advanced" },
-        { name: "Spring Boot", level: "Advanced" },
+        { name: "Java", level: "Intermediate" },
+        { name: "Spring Boot", level: "Intermediate" },
         { name: "Spring Security", level: "Intermediate" },
-        { name: "REST APIs", level: "Advanced" },
+        { name: "REST APIs", level: "Intermediate" },
         { name: "Microservices", level: "Intermediate" },
         { name: "Maven", level: "Intermediate" }
       ]
@@ -19,36 +19,34 @@ const SkillsSection = () => {
       title: "Frontend Development", 
       icon: "🎨",
       skills: [
-        { name: "Angular", level: "Advanced" },
-        { name: "TypeScript", level: "Advanced" },
+        { name: "Angular", level: "Intermediate" },
+        { name: "TypeScript", level: "Intermediate" },
         { name: "HTML5", level: "Advanced" },
-        { name: "CSS3", level: "Advanced" },
-        { name: "JavaScript", level: "Advanced" },
-        { name: "Responsive Design", level: "Advanced" }
+        { name: "CSS3", level: "Intermediate" },
+        { name: "JavaScript", level: "Intermediate" },
+        { name: "Responsive Design", level: "Intermediate" }
       ]
     },
     {
       title: "Database & Tools",
       icon: "🗄️", 
       skills: [
-        { name: "MySQL", level: "Intermediate" },
+        { name: "MySQL", level: "Beginner" },
+        { name : "MongoDB", level:"Beginner"},
         { name: "PostgreSQL", level: "Intermediate" },
-        { name: "Git", level: "Advanced" },
-        { name: "Docker", level: "Beginner" },
+        { name: "Git", level: "Intermediate" },
+        // { name: "Docker", level: "Beginner" },
         { name: "Swagger", level: "Intermediate" },
-        { name: "Postman", level: "Advanced" }
+        { name: "Postman", level: "Intermediate" }
       ]
     },
     {
       title: "Methodologies & Practices",
       icon: "⚡",
       skills: [
-        { name: "Agile/Scrum", level: "Intermediate" },
-        { name: "Clean Code", level: "Advanced" },
-        { name: "TDD", level: "Intermediate" },
-        { name: "Code Review", level: "Intermediate" },
         { name: "Performance Optimization", level: "Intermediate" },
-        { name: "API Documentation", level: "Advanced" }
+        { name: "API Documentation", level: "Intermediate" },
+        { name: "J-Unit testing" , level:"Intermediate"}
       ]
     }
   ];
