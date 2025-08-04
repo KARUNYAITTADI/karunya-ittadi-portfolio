@@ -212,3 +212,28 @@ p {
   .navbar { flex-direction: column; }
   .nav-link { margin: 0.5rem 0; }
 }
+
+/* ===== Dark Theme ===== */
+body.dark {
+  --bg: #0f172a;           /* Dark background */
+  --text: #f8fafc;         /* Light text */
+  --primary: #60a5fa;      /* Soft Blue */
+  --primary-dark: #3b82f6; /* Stronger Blue */
+  --secondary: #facc15;    /* Yellow accent */
+  --secondary-dark: #eab308;
+  --muted: #1e293b;        /* Muted dark background */
+  --accent: #334155;       /* Accent background */
+  --accent-dark: #475569;
+  --card-bg: #1e293b;      /* Dark cards */
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --glow-shadow: 0 0 16px rgba(96, 165, 250, 0.4);
+}
+
+body.dark p {
+  color: #cbd5e1; /* Muted text for paragraphs */
+}
+
+body.dark .navbar {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
