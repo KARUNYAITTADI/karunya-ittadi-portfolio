@@ -9,47 +9,47 @@ const ProjectsSection = () => {
   const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
   const projects = [
-    {
-      title: "Med-worldexpo",
-      subtitle: "Healthcare Exhibition Platform",
-      description: "A comprehensive healthcare exhibition platform built with Java Spring Boot and Angular, featuring real-time components, universal search capabilities, and secure authentication workflows.",
-      fullDescription: `Med-worldexpo is a sophisticated healthcare exhibition platform designed to connect medical professionals, exhibitors, and attendees in a seamless digital environment. The platform serves as a comprehensive solution for healthcare exhibitions, conferences, and networking events.
+//     {
+//       title: "Med-worldexpo",
+//       subtitle: "Healthcare Exhibition Platform",
+//       description: "A comprehensive healthcare exhibition platform built with Java Spring Boot and Angular, featuring real-time components, universal search capabilities, and secure authentication workflows.",
+//       fullDescription: `Med-worldexpo is a sophisticated healthcare exhibition platform designed to connect medical professionals, exhibitors, and attendees in a seamless digital environment. The platform serves as a comprehensive solution for healthcare exhibitions, conferences, and networking events.
 
-The application features a robust backend built with Java Spring Boot, implementing RESTful APIs that handle complex business logic for user management, exhibition listings, booking systems, and real-time communication. The frontend is developed using Angular with TypeScript, providing a responsive and intuitive user interface.
+// The application features a robust backend built with Java Spring Boot, implementing RESTful APIs that handle complex business logic for user management, exhibition listings, booking systems, and real-time communication. The frontend is developed using Angular with TypeScript, providing a responsive and intuitive user interface.
 
-Key architectural decisions include implementing microservices patterns for scalability, using Spring Security for comprehensive authentication and authorization, and integrating real-time features for live updates during exhibitions. The platform supports thousands of concurrent users during peak exhibition periods.`,
-      technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "MySQL", "TypeScript", "REST APIs", "Swagger"],
-      features: [
-        {
-          icon: <Database className="w-5 h-5" />,
-          title: "RESTful API Architecture",
-          description: "Designed and implemented comprehensive REST APIs with proper HTTP methods, status codes, and resource modeling. Achieved 99.9% uptime with response times under 200ms."
-        },
-        {
-          icon: <Search className="w-5 h-5" />,
-          title: "Universal Search Implementation", 
-          description: "Built advanced search functionality with filters, pagination, and real-time suggestions. Supports multi-criteria search across exhibitions, companies, and products."
-        },
-        {
-          icon: <Zap className="w-5 h-5" />,
-          title: "Real-time Angular Components",
-          description: "Developed dynamic Angular components with WebSocket integration for live updates, real-time notifications, and instant data synchronization across multiple clients."
-        },
-        {
-          icon: <Shield className="w-5 h-5" />,
-          title: "Authentication Workflows",
-          description: "Implemented secure authentication using Spring Security with JWT tokens, role-based access control, and session management for different user types (exhibitors, attendees, admins)."
-        }
-      ],
-      achievements: [
-        "Reduced API response time by 40% through database optimization",
-        "Implemented real-time features supporting 1000+ concurrent users",
-        "Achieved 95% code coverage with comprehensive unit testing",
-        "Documented APIs using Swagger with 100% endpoint coverage"
-      ],
-      demoUrl: "https://medworldexpo.com/v1/",
-      // githubUrl: "#"
-    },
+// Key architectural decisions include implementing microservices patterns for scalability, using Spring Security for comprehensive authentication and authorization, and integrating real-time features for live updates during exhibitions. The platform supports thousands of concurrent users during peak exhibition periods.`,
+//       technologies: ["Java", "Spring Boot", "Angular", "Spring Security", "MySQL", "TypeScript", "REST APIs", "Swagger"],
+//       features: [
+//         {
+//           icon: <Database className="w-5 h-5" />,
+//           title: "RESTful API Architecture",
+//           description: "Designed and implemented comprehensive REST APIs with proper HTTP methods, status codes, and resource modeling. Achieved 99.9% uptime with response times under 200ms."
+//         },
+//         {
+//           icon: <Search className="w-5 h-5" />,
+//           title: "Universal Search Implementation", 
+//           description: "Built advanced search functionality with filters, pagination, and real-time suggestions. Supports multi-criteria search across exhibitions, companies, and products."
+//         },
+//         {
+//           icon: <Zap className="w-5 h-5" />,
+//           title: "Real-time Angular Components",
+//           description: "Developed dynamic Angular components with WebSocket integration for live updates, real-time notifications, and instant data synchronization across multiple clients."
+//         },
+//         {
+//           icon: <Shield className="w-5 h-5" />,
+//           title: "Authentication Workflows",
+//           description: "Implemented secure authentication using Spring Security with JWT tokens, role-based access control, and session management for different user types (exhibitors, attendees, admins)."
+//         }
+//       ],
+//       achievements: [
+//         "Reduced API response time by 40% through database optimization",
+//         "Implemented real-time features supporting 1000+ concurrent users",
+//         "Achieved 95% code coverage with comprehensive unit testing",
+//         "Documented APIs using Swagger with 100% endpoint coverage"
+//       ],
+//       demoUrl: "https://medworldexpo.com/v1/",
+//       // githubUrl: "#"
+//     },
     {
       title: "Portfolio Website",
       subtitle: "Personal Portfolio & Blog",

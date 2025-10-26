@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Logo/Name */}
           <div>
             <h3 className="text-2xl font-bold mb-2">Ittadi Karunya</h3>
-            <p className="text-background/80">Full Stack Developer</p>
+            <p className="text-background/80">Full Stack Java Developer</p>
           </div>
 
           {/* Navigation Links */}
@@ -66,7 +66,7 @@ const Footer = () => {
             <Button
               variant="outline"
               onClick={scrollToTop}
-              className="border-background/20 text-background hover:bg-background hover:text-foreground"
+              className="border-background/20 text-background bg-background text-foreground"
             >
               Back to Top
             </Button>
@@ -76,7 +76,7 @@ const Footer = () => {
           <div className="border-t border-background/20 pt-8">
             <p className="text-background/60 flex items-center justify-center gap-2 flex-wrap">
               © {currentYear} Ittadi Karunya. Built with
-              <Heart size={16} className="text-red-400" />
+              {/* <Heart size={16} className="text-red-400" /> */}
               using React & TypeScript
             </p>
           </div>
